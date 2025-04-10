@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Booking</title>
+		<link rel="stylesheet" href="style.css" />
+		 <!-- External Styles & Fonts -->
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
+		 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" crossorigin="anonymous">
+		 <link href="https://fonts.googleapis.com/css?family=Pacifico|Paytone+One" rel="stylesheet">
+		 <link rel="stylesheet" href="emiratescss.css">
+		 
+	 
+		 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	 </head>
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">
+						<img src="Dream Plane Logo.jpeg" id="logo"> GERIMEL AIRWAYS
+					</a>
+				</div>
+		
+				<div class="collapse navbar-collapse" id="navbar-menu">
+					<ul class="nav navbar-nav">
+						<li><a href="#"><strong>Home</strong></a></li>
+		
+						<!-- Manage Dropdown -->
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+								<strong>Manage</strong> <span class="dropdown content"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Booking</a></li>
+								<li><a href="#">Flights</a></li>
+								<li><a href="#">Check-in</a></li>
+							</ul>
+						</li>
+		
+						<!-- Travel Info Dropdown -->
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+								<strong>Travel Info</strong> <span class="dropdown content"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Baggage Policy</a></li>
+								<li><a href="#">Travel Requirements</a></li>
+								<li><a href="#">COVID-19 Updates</a></li>
+							</ul>
+						</li>
+		
+						<!-- About Dropdown -->
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+								<strong>About</strong> <span class="dropdown content"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Our Story</a></li>
+								<li><a href="#">Team</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</li>
+					</ul>
+		
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="Login.html"><strong>Login</strong> <i class="fas fa-user"></i></a></li>
+						<li><a href="Register.html"><strong>Sign up</strong> <i class="fas fa-user-plus"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+				<div id="mainBtnContainer">
+					<div id="flights" class="tab-pane fade in active">
+						<h3>Flights</h3>
+						<form action="#" method="POST">
+							<select name="origin" class="drop">
+								<option value="Origin">Origin</option>
+								<option value="Samar">Samar</option>
+								<option value="Tarlac">Tarlac</option>
+								<option value="Singapore">Singapore</option>
+								<option value="USA">USA</option>
+							</select>
+							<i class="fas fa-exchange-alt"></i>
+							<select name="destination" class="drop">
+								<option value="Destination">Destination</option>
+								<option value="Manila">Manila</option>
+								<option value="Bohol">Bohol</option>
+								<option value="Zamboanga">Zamboanga</option>
+							</select>
+							<input type="number" name="passengers" class="drop" min="1" max="10" placeholder="Passengers">
+							<input type="date" name="depart" class="drop">
+							<input type="date" name="return" class="drop">
+							<input type="submit" value="Search Flights" class="btn btn-primary">
+						</form>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div id="mainOutput"></div>
+
+		<script src="Main.js"></script>
+	</body>
+</html>
