@@ -1,0 +1,225 @@
+/* General Body Styles */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	overflow-x: hidden; /* Prevent horizontal scroll */
+	background-color: white;
+	background-size: 100% 84%; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat;
+	animation: changeBackground 7s infinite; /* Change every 15 seconds */
+}
+
+/* Keyframe Animation for Auto-changing Background */
+@keyframes changeBackground {
+  0% {
+    background-image: url('manila.jpg'); /* Replace with your first image */
+  }
+  33% {
+    background-image: url('bohol.jpg'); /* Replace with your second image */
+  }
+  66% {
+    background-image: url('zamboanga.jpg'); /* Replace with your third image */
+  }
+  100% {
+    background-image: url('manila.jpg'); /* Loop back to the first image */
+  }
+}
+
+  
+  /* Lock the layout width */
+  .container {
+	max-width: 1280px; /* Define a maximum width */
+	margin: 0 auto; /* Center content */
+	padding: 0 20px;
+	box-sizing: border-box;
+  }
+
+  
+  #border {
+	background-color: red;
+	height: 300px;
+	width: 100%; /* Ensure it stretches full width */
+  }
+  
+  /* Navbar Styles */
+  #mainNav ul {
+	font-size: 25px;
+	list-style: none;
+	margin: 0;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between; /* Space out the items */
+	background-color: #f8f8f8;
+  }
+  
+  
+  .navbar-brand {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-family: 'Paytone One', sans-serif;
+	font-size: 24px;
+	color: black;
+	text-decoration: none;
+	white-space: nowrap;
+	position: relative;
+  }
+  
+  #mainNav li {
+	margin-right: 20px;
+	position: relative; /* added for dropdown positioning */
+  }
+  
+  #mainNav li:last-child {
+	margin-right: 0;
+  }
+  
+  #mainNav a {
+	text-decoration: none;
+	color: black;
+	padding: 10px 15px;
+	display: block;
+  }
+  
+  #mainNav a:hover {
+	background-color: #f0f0f0;
+  }
+  
+  /* Dropdown Styles */
+  .dropdown-menu {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	border: none;
+  }
+  
+  .dropdown-menu li {
+	margin: 0;
+  }
+  
+  .dropdown-menu a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+  }
+  
+  .dropdown-menu a:hover {
+	background-color: #f1f1f1;
+  }
+  
+  /* Show dropdown on hover */
+  .dropdown:hover .dropdown-menu {
+	display: block;
+  }
+  
+  /* Main Output Section */
+  #mainOutput {
+	height: 500px;
+	margin-top: 100px; /* Adjust for navbar space */
+	width: 100%;
+  }
+  
+  /* Button Container */
+  #mainBtnContainer {
+    border-radius: 20px;
+    background-color: rgb(187, 187, 187);
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.4);
+    display: inline-block;
+    height: auto; /* Adjusted height for flexible content */
+    width: 100%; /* Full width of parent container */
+    max-width: 500px; /* Limit width for better fitting */
+    position: absolute;
+    top: 500px; /* Adjust top for better placement */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Form Group Layout */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Styling for Dropdown and Inputs */
+#flights select, #flights input, #flights input[name="passengers"] {
+    margin-right: 0%; /* Right margin for spacing */
+    width: 100%; /* Set to 100% to make inputs and selects full width */
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    margin-bottom: 10px; /* Add bottom margin for spacing */
+}
+
+/* Styling for Submit Button */
+#flights input[type="submit"] {
+    width: 100%; /* Set to 100% width for the button */
+    padding: 14px;
+    font-size: 18px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#flights input[type="submit"]:hover {
+    background-color: #444;
+}
+/* Dropdown Container (for left-right arrows) */
+.dropdown-container {
+    display: flex;
+    justify-content: space-between; /* Spread out the Origin and Destination */
+    align-items: center; /* Vertically center the elements */
+    margin-top: 10px;
+}
+
+.dropdown-container select {
+    width: 45%; /* Set width of dropdowns to 45% each */
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+
+/* Styling for Passenger Number Input */
+#flights input[name="return"] {
+    width: 100%; /* Set the width for the return date input */
+}
+
+.midBtn {
+    font-size: 25px;
+    margin: 0 20px;
+    padding: 4px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    color: wheat;
+    position: relative;
+    top: 30px;
+    left: -50px;
+}
+
+  
+  #Flight {
+	position: relative;
+	display: inline;
+	right: 150px;
+	top: 30px;
+  }
+  
+  button {
+	text-align: center;
+  }
